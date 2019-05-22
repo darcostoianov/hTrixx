@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <link rel="stylesheet" href="F:/Darco/Framework/Htrixx/hTrixx.css">
+    <link rel="stylesheet" href="hTrixx.css">
     <link href="https://fonts.googleapis.com/css?family=Dancing+Script" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Marck+Script" rel="stylesheet">
 </head>
