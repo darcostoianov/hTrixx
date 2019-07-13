@@ -1,4 +1,23 @@
-﻿
+/*hTrixx.css*/
+
+.h-loading{
+    position:fixed;
+    margin:0;
+    top:50%;
+    left:50%;
+    margin-right:-50%;
+    transform:translate(-50%,-50%);
+    z-index:10000;
+    justify-content: center;
+}
+.h-blur {
+    -webkit-filter: blur(5px);
+    -moz-filter: blur(5px);
+    -ms-filter: blur(5px);
+    filter: blur(5px);
+    opacity:0.5;
+}
+
 .animateLeft {
     animation: fading 5s infinite;
     position: relative;
@@ -38,6 +57,32 @@
 
 .h-mt-30 {
     margin-top: 30px;
+}
+.h-mt-40 {
+    margin-top: 40px;
+}
+.h-mt-50 {
+    margin-top: 50px;
+}
+
+.h-mt-55 {
+    margin-top: 55px;
+}
+
+.h-mt-60 {
+    margin-top: 60px;
+}
+.h-mt-70 {
+    margin-top: 70px;
+}
+.h-mt-80 {
+    margin-top: 80px;
+}
+.h-mt-90 {
+    margin-top: 90px;
+}
+.h-mt-100 {
+    margin-top: 100px;
 }
 
 .h-nav-lg {
@@ -79,7 +124,6 @@
 
 
 /*-------------------Colors------------------*/
-
 .h-primary-b-new {
     background: linear-gradient(-45deg,#a7d4ff,#58a5ef,#a7d4ff,#58a5ef,#a7d4ff);
 }
@@ -96,12 +140,24 @@
     background: linear-gradient(-45deg,#a1ffa5,#30c437,#90f894,#30c437,#a0f9a4);
 }
 
+.h-slate-b-new {
+    background: linear-gradient(-45deg,#0e3a38,#2dbeb7,#0e3a38,#2dbeb7,#0e3a38);
+}
+
 .h-white-b-new {
     background: linear-gradient(-45deg,#d6d6d6,white,#d6d6d6,white,#d6d6d6);
 }
 
 .h-black-b-new {
-    background: linear-gradient(-45deg,#888888,black,#888888,black,#888888);
+    background: linear-gradient(-45deg,#1c1c1c,black,#1c1c1c,black,#1c1c1c);
+}
+
+.h-gold-b-new {
+    background: linear-gradient(-45deg,#f2a300,#fbcf00,#f2a300,#fbcf00,#f2a300);
+}
+
+.h-platinum-b-new {
+    background: linear-gradient(-45deg,#1c1c1c,black,#1c1c1c,black,#1c1c1c);
 }
 
 .h-primary {
@@ -159,8 +215,13 @@
 .h-color-b {
     background-color: #5e5e5e;
 }
-.h-slategray-b{
-    background-color:darkslategray;
+
+.h-darkslategrey{
+    color:darkslategrey!important;
+}
+
+.h-darkslategrey-b{
+    background-color:darkslategrey!important;
 }
 
 
@@ -183,7 +244,7 @@
 
 .dropdown-menu {
     width: 250px;
-    background: white;
+    background: url("https://www.toptal.com/designers/subtlepatterns/patterns/dark_mosaic.png");
     border: 1px solid white !important;
 }
 
@@ -302,6 +363,7 @@ table {
     border-radius: 6px;
     -moz-border-radius: 6px;
     width: 100%;
+    font-family: Helvetica;
 }
 
     table tr td:hover {
@@ -315,6 +377,7 @@ table {
 
 
     table tr:hover {
+        background-color: rgb(122, 122, 122);
         color: white;
     }
 
@@ -330,32 +393,6 @@ table {
     border: none !important;
 }
 
-
-.tbl-white th {
-    background: linear-gradient(-45deg,#d6d6d6,white,#d6d6d6,white,#d6d6d6);
-    color: black;
-    font-weight: bolder;
-    background-size: 500px 500px;
-}
-
-.tbl-white-b tr:hover {
-    background: linear-gradient(-45deg,#d6d6d6,#bababa,#d6d6d6,#bababa,#d6d6d6);
-    color: black;
-    
-}
-
-.tbl-black th {
-   background: linear-gradient(-45deg,#1c1c1c,black,#1c1c1c,black,#1c1c1c);
-    color: white;
-    font-weight: bolder;
-    background-size: 500px 500px;
-}
-
-.tbl-black-b tr:hover {
-    background: linear-gradient(-45deg,#1c1c1c,grey,#1c1c1c,grey,#1c1c1c);
-    color: white;
-    
-}
 
 .tbl-primary th {
     background-color: #58a5ef;
@@ -396,21 +433,15 @@ table {
 
 /*-----------------------General-------------------------*/
 
-.h-mb-5 {
-    margin-bottom: 5px;
+.h-bottom-text{
+    position:absolute;
+    width:100%;
+    height:100%;
+    margin-top: 200px;
 }
-.h-mb-10 {
-    margin-bottom: 10px;
-}
-.h-mb-15 {
-    margin-bottom: 15px;
-}
-.h-mb-20 {
-    margin-bottom: 20px;
-}
-.h-mb-25 {
-    margin-bottom: 25px;
-}
+
+
+
 .h-mb-30 {
     margin-bottom: 30px;
 }
@@ -418,10 +449,6 @@ table {
 
 .h-fs-10 {
     font-size: 10px;
-}
-
-.h-fs-12 {
-    font-size: 12px;
 }
 
 .h-fs-15 {
@@ -462,15 +489,6 @@ table {
 
 .h-br-l {
     border-left: 0.3px solid grey;
-}
-.h-br-r {
-    border-right: 0.3px solid grey;
-}
-.h-br-t {
-    border-top: 0.3px solid grey;
-}
-.h-br-b {
-    border-bottom: 0.3px solid grey;
 }
 
 
@@ -634,43 +652,43 @@ table {
 
 
 .h-width-10 {
-    width: 10%;
+    width: 10%!important;
 }
 
 .h-width-20 {
-    width: 20%;
+    width: 20%!important;
 }
 
 .h-width-30 {
-    width: 30%;
+    width: 30%!important;
 }
 
 .h-width-40 {
-    width: 40%;
+    width: 40%!important;
 }
 
 .h-width-50 {
-    width: 50%;
+    width: 50%!important;
 }
 
 .h-width-60 {
-    width: 60%;
+    width: 60%!important;
 }
 
 .h-width-70 {
-    width: 70%;
+    width: 70%!important;
 }
 
 .h-width-80 {
-    width: 80%;
+    width: 80%!important;
 }
 
 .h-width-90 {
-    width: 90%;
+    width: 90%!important;
 }
 
 .h-width-100 {
-    width: 100%;
+    width: 100%!important;
 }
 
 
@@ -809,6 +827,20 @@ input:not([type]), input[type="text"] {
         border-bottom: 1.5px solid rgb(88, 88, 88);
         outline: none;
     }
+
+
+
+/*-------------------Select--------------------*/
+
+select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+/*-----------------------------------------------------*/
 
 .txt-darkslategrey {
     border-bottom: 1px solid #4fc1ba !important;
@@ -1009,11 +1041,6 @@ input[type="password"] {
     cursor: pointer !important;
 }
 
-.file-darkslategrey {
-    border: 2px solid darkslategrey !important;
-    color: darkslategrey !important;
-}
-
 .file-primary {
     border: 2px solid #58a5ef !important;
     color: #58a5ef !important;
@@ -1032,6 +1059,126 @@ input[type="password"] {
 .file-success {
     border: 2px solid #66bb6a !important;
     color: #66bb6a !important;
+}
+
+
+
+
+
+.file-upload {
+  background-color: #ffffff;
+  width: 90%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.file-upload-btn {
+  width: 100%;
+  margin: 0;
+  color: #fff;
+  background: #217e7a;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #0e3a38;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.file-upload-btn:hover {
+  background: #30aca6;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.file-upload-btn:active {
+  border: 0;
+  transition: all .2s ease;
+}
+
+.file-upload-content {
+  display: none;
+  text-align: center;
+}
+
+.file-upload-input {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  outline: none;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.image-upload-wrap {
+    background-color:#cccccc;
+  margin-top: 20px;
+  border: 4px dashed #217e7a;
+  position: relative;
+  transition:background 0.1s ease-in
+}
+
+.image-dropping,
+.image-upload-wrap:hover {
+  background-color: #217e7a;
+  border: 4px dashed #ffffff;
+  color:white;
+}
+
+.image-title-wrap {
+  padding: 0 15px 15px 15px;
+  color: #222;
+}
+
+.drag-text {
+  text-align: center;
+}
+
+.drag-text h3 {
+  font-weight: 100;
+  text-transform: uppercase;
+  color: white;
+  padding: 60px 0;
+}
+
+
+.file-upload-image {
+  max-height: 200px;
+  max-width: 200px;
+  margin: auto;
+  padding: 20px;
+}
+
+.remove-image {
+  width: 200px;
+  margin: 0;
+  color: #fff;
+  background: #cd4535;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  border-bottom: 4px solid #b02818;
+  transition: all .2s ease;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.remove-image:hover {
+  background: #c13b2a;
+  color: #ffffff;
+  transition: all .2s ease;
+  cursor: pointer;
+}
+
+.remove-image:active {
+  border: 0;
+  transition: all .2s ease;
 }
 
 
@@ -1213,19 +1360,15 @@ html {
     border-radius: 15px;
     transition: background 0.2s ease-out;
     background-size: 200px 200px;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 2px #aba8a8;
-    box-shadow: 0px 0px 3px #969696, 0px 0px 0px #aba8a8;
 }
 
     .h-btn-slategray:hover {
         background-position: 150px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-slategray:active {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
@@ -1241,25 +1384,21 @@ html {
     border-radius: 15px;
     transition: background 0.2s ease-out;
     background-size: 100px 100px;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 2px #aba8a8;
-    box-shadow: 0px 0px 3px #969696, 0px 0px 0px #aba8a8;
 }
 
     .h-btn-black:hover {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-black:active {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-black:focus {
+        border: none !important;
         text-decoration: none;
-        border:1px solid white;
     }
 
 
@@ -1270,27 +1409,22 @@ html {
     border-radius: 15px;
     transition: background 0.2s ease-out;
     background-size: 100px 100px;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 2px #aba8a8;
-    box-shadow: 0px 0px 3px #969696, 0px 0px 0px #aba8a8;
 }
 
     .h-btn-white:hover {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-white:active {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-white:focus {
+        border: none !important;
         text-decoration: none;
-        border:1px solid black;
     }
-
 
 .h-btn-primary {
     background: linear-gradient(-45deg,#a7d4ff,#58a5ef,#a7d4ff,#58a5ef,#a7d4ff);
@@ -1299,19 +1433,15 @@ html {
     border-radius: 15px;
     transition: background 0.2s ease-out;
     background-size: 100px 100px;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 2px #aba8a8;
-    box-shadow: 0px 0px 3px #969696, 0px 0px 0px #aba8a8;
 }
 
     .h-btn-primary:hover {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-primary:active {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
@@ -1329,19 +1459,15 @@ html {
     border-radius: 15px;
     transition: background 0.2s ease-out;
     background-size: 100px 100px;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 2px #aba8a8;
-    box-shadow: 0px 0px 3px #969696, 0px 0px 0px #aba8a8;
 }
 
     .h-btn-warning:hover {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-warning:active {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
@@ -1359,19 +1485,15 @@ html {
     border-radius: 15px;
     transition: background 0.2s ease-out;
     background-size: 100px 100px;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 2px #aba8a8;
-    box-shadow: 0px 0px 3px #969696, 0px 0px 0px #aba8a8;
 }
 
     .h-btn-danger:hover {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-danger:active {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
@@ -1381,25 +1503,21 @@ html {
     }
 
 .h-btn-success {
-    background: linear-gradient(-45deg,#a1ffa5,#30c437,#90f894,#30c437,#a0f9a4);
+    background: linear-gradient(-45deg,#07ef11,#30c437,#07ef11,#30c437,#07ef11);
     color: white;
     font-weight: bolder;
     border-radius: 15px;
     transition: background 0.2s ease-out;
     background-size: 100px 100px;
-    text-shadow: 1px 1px 0 #969696, 1px 1px 2px #aba8a8;
-    box-shadow: 0px 0px 3px #969696, 0px 0px 0px #aba8a8;
 }
 
     .h-btn-success:hover {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
     .h-btn-success:active {
         background-position: 100px;
-        text-shadow: 2px 2px 0 #969696, 5px 5px 5px #aba8a8;
         box-shadow: 0px 0px 6px #969696, 0px 0px 0px #aba8a8;
     }
 
