@@ -787,44 +787,37 @@ table {
 input:not([type]), input[type="text"] {
     position: unset;
     padding: 0.5%;
-    border: none;
     text-decoration: none;
-    border-bottom: 1px solid rgb(29, 29, 29);
+    border: 1px solid rgb(209, 209, 209);
     padding-top: 10px;
     width: 180px;
-    height: 40px;
+    height: 35px;
     max-width: none;
-    font-family: Helvetica;
     background: transparent;
+    border-radius:3px;
+    transition: 0.3s all;
 }
 
     input:not([type]):focus {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(29, 29, 29);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
-        font-family: Helvetica;
+
     }
 
     input[type="text"]:focus {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(29, 29, 29);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
-        font-family: Helvetica;
+
     }
 
     input:not([type]):hover {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(88, 88, 88);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
+
     }
 
     input[type="text"]:hover {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(88, 88, 88);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
     }
 
@@ -911,29 +904,24 @@ select, textarea {
 input[type="number"] {
     position: unset;
     padding: 0.5%;
-    border: none;
     text-decoration: none;
-    border-bottom: 1px solid rgb(29, 29, 29);
+    border: 1px solid rgb(209, 209, 209);
     padding-top: 10px;
     width: 180px;
-    height: 40px;
+    height: 35px;
     max-width: none;
-    font-family: Helvetica;
     background: transparent;
+    border-radius:3px;
+    transition: 0.3s all;
 }
 
     input[type="number"]:focus {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(29, 29, 29);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
-        font-family: Helvetica;
     }
 
     input[type="number"]:hover {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(88, 88, 88);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
     }
 
@@ -942,29 +930,24 @@ input[type="number"] {
 input[type="date"] {
     position: unset;
     padding: 0.5%;
-    border: none;
     text-decoration: none;
-    border-bottom: 1px solid rgb(29, 29, 29);
+    border: 1px solid rgb(209, 209, 209);
     padding-top: 10px;
     width: 180px;
-    height: 40px;
+    height: 35px;
     max-width: none;
-    font-family: Helvetica;
     background: transparent;
+    border-radius:3px;
+    transition: 0.3s all;
 }
 
     input[type="date"]:focus {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(29, 29, 29);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
-        font-family: Helvetica;
     }
 
     input[type="date"]:hover {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(88, 88, 88);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
     }
 
@@ -974,29 +957,24 @@ input[type="date"] {
 input[type="password"] {
     position: unset;
     padding: 0.5%;
-    border: none;
     text-decoration: none;
-    border-bottom: 1px solid rgb(29, 29, 29);
+    border: 1px solid rgb(209, 209, 209);
     padding-top: 10px;
     width: 180px;
-    height: 40px;
+    height: 35px;
     max-width: none;
-    font-family: Helvetica;
     background: transparent;
+    border-radius:3px;
+    transition: 0.3s all;
 }
 
     input[type="password"]:focus {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(29, 29, 29);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
-        font-family: Helvetica;
     }
 
     input[type="password"]:hover {
-        border: none;
-        text-decoration: none;
-        border-bottom: 1.5px solid rgb(88, 88, 88);
+        box-shadow: #e6e6e6 1px 1px 2px 2px;
         outline: none;
     }
 
@@ -1277,6 +1255,7 @@ input[type="submit"] {
 .h-scroll {
     overflow-y: scroll;
 }
+
 /*--------------------------------------Select------------------------------------*/
 select {
     padding: 0.5%;
@@ -1628,6 +1607,101 @@ html {
 }
 
 
+/*-----------------------------------------------*/
+
+.h-flip {
+    background-color: transparent;
+    width: 1000px;
+    height: 600px;
+    perspective: 1000px;
+    text-align:center;
+  }
+  
+  .h-flip-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  .h-flip:hover .h-flip-inner {
+    transform: rotateY(180deg);
+  }
+  
+  .h-flip-front, .h-flip-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+  }
+  
+  .h-flip-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  .h-flip-back {
+    background-color: #dfdfdf;
+    color: rgb(31, 29, 29) ;
+    transform: rotateY(180deg);
+    padding-top:20px;
+  }
+  
+  .h-flip-desc{
+    font-size: 12px;
+  }
+
+  /*--------------------------------------------*/
+
+.h-pic-main{
+    width:740;
+    margin-top:40px;
+    transition:0.5s all ;
+    border:0.5px solid #c1c1c1;
+    margin:auto;
+    padding:20px;
+}
+
+.h-pic-top{
+    text-align: center;
+    width: 600px;
+    border-top:0.5px solid #1c1c1c;
+    border-left:0.5px solid #1c1c1c;
+    border-right: 0.5px solid #1c1c1c;
+    border-radius:5px ;
+    margin:0 auto;
+    box-shadow: 0.5px 0.5px 10px 0.5px #1c1c1c;
+    transition:0.5s all ;
+
+}
+
+.h-pic-img{
+    width:700;
+    border:1px solid #1c1c1c;
+    border-radius:2px 2px 3px 3px;
+    transition:0.5s all ;
+    box-shadow: 0.5px 0.5px 10px 0.5px #1c1c1c;
+    
+}
+
+
+
+.h-pic-bottom{
+    text-align: center;
+    width: 600px;
+    border-bottom:0.5px solid #1c1c1c;
+    border-left:0.5px solid #1c1c1c;
+    border-right: 0.5px solid #1c1c1c;
+    border-radius: 0px 0px 5px 5px;
+    margin:auto;
+    transition:0.5s all ;
+    box-shadow: 0.5px 0.5px 10px 0.5px #1c1c1c;
+    padding:15px;
+
+}
 
 /*-----------------Allign------------------*/
 
