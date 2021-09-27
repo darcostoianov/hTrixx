@@ -22,7 +22,7 @@
             <label class="h-black ">Dark Buttons</label>
             <br>
             <br>
-            <button class="h-btn-dark-rev">Button</button>
+            <button class="btn btn-primary">Button</button>
             <button class="h-btn-black">Button</button>
             <button class="h-btn-dark-rev h-btn-round">Button</button>
             <button class="h-btn-black h-btn-round">Button</button>
