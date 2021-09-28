@@ -1,9 +1,5 @@
-<div class="h-50 h-width-100">
-    <br />
-    <br />
-    <br />
-    <br />
-    <div class="text-center" style="text-align:center" id="top1">
+<div class="h-50 h-width-100" style="text-align:center">
+    <div style="text-align:center" id="top1">
         <img style="width:400px" src="https://i.ibb.co/9tKSzNv/h-Trixx-Framework-Logo-Small.png" id="htrixxLogo" />
     </div>
     <br />
@@ -19,7 +15,7 @@
         ✓ It is very easy to use
     </p>
     <p class="h-p-r-400 h-p-l-400" id="use1">
-        ✓ It can be used together with bootstrap and jQuery
+        ✓ It can be used together with Bootstrap and jQuery
     </p>
     <p class="h-p-r-400 h-p-l-400" id="use1">
         ✓ Contains all HTML elements
